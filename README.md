@@ -1,5 +1,6 @@
 # heroes-app
 
+view live : https://shubhamgulik.github.io/heroes-app/index.html
 # Super Hero Hunter
 
 ## Requirement
