@@ -1,0 +1,227 @@
+body {
+  background-color: #0c1d33;
+  margin: auto;
+  text-align: center;
+}
+
+/* Title of the page */
+#title {
+  color: #bcc4d1;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 3.6rem;
+  border: 1px solid;
+  padding: 10px;
+}
+
+/* Search container */
+#search-container {
+  position: relative;
+  display: inline-block;
+}
+
+/* Input type search */
+#search {
+  width: 420px;
+  padding: 15px 25px;
+  border: 1px solid #0a1f44;
+  font-size: 1rem;
+  letter-spacing: 0.05rem;
+  border-radius: 12px;
+}
+
+/* when search is in focus */
+#search:focus {
+  outline: none;
+}
+
+/* All results of search query */
+#search-results-container {
+  position: absolute;
+  /* border: 1px solid #d4d4d4; */
+  border-bottom: none;
+  border-top: none;
+  z-index: 99;
+  top: 100%;
+  left: 0;
+  right: 0;
+  max-height: 400px;
+  overflow-y: scroll;
+}
+
+#search-results-container div {
+  padding: 10px;
+  cursor: pointer;
+  /* background-color: #9fb3d8;  */
+  border-bottom: 1px solid #d4d4d4;
+  border-radius: 12px;
+}
+
+/* Hide scrollbar using webkit */
+#search-results-container::-webkit-scrollbar {
+  display: none;
+}
+
+/* Single hero card in search list */
+.search-item {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  background-color: #8390dd;
+  font-family: "Courier New", Courier, monospace;
+}
+
+/* Container of all cards */
+#super-hero-container {
+  display: flex;
+  justify-content: space-evenly;
+  width: 75%;
+  margin: auto;
+  padding-top: 50px;
+}
+
+/* Image of superhero */
+#image {
+  width: 350px;
+  height: 250px;
+}
+
+#img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+/* Left part of the superhero card */
+#left {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  text-align: left;
+  width: 30%;
+}
+
+#main {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  padding-top: 25px;
+  width: 70%;
+}
+
+/* Name of the superhero */
+
+#hero-name {
+  font-size: 2rem;
+  font-weight: bold;
+  padding: 10px 0;
+  color: white;
+}
+
+/* right part of the superhero card */
+
+#right {
+  display: flex;
+  text-align: left;
+  justify-content: space-evenly;
+  color: white;
+  margin-left: 1rem;
+}
+
+#right div {
+  padding-top: 15px;
+}
+
+.heading {
+  font-size: 1.5rem;
+  font-weight: bold;
+  padding: 10px 0;
+}
+
+#aliases {
+  max-width: 250px;
+  max-height: 100px;
+  overflow: auto;
+}
+
+/* Fav heroes list */
+#favourite-heros {
+  display: flex;
+  width: 85%;
+  margin: auto;
+  min-width: 480px;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+/* Details of the hero  */
+.hero-details {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  padding: 10px;
+}
+
+.hero-img-container {
+  height: 270px;
+  width: 210px;
+}
+
+.hero-img-container img {
+  width: 100%;
+  height: 100%;
+  object-fit: fill;
+}
+
+/* Details of the superhero */
+.info {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 35px;
+  margin-top: -35px;
+}
+
+/* Name */
+.hero-name {
+  font-size: 1.5rem;
+  font-family: "Courier New", Courier, monospace;
+  font-weight: bold;
+  padding: 10px;
+  color: white;
+}
+
+/* Remove button */
+.remove-fav {
+  font-size: 1rem;
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #5cc7b2;
+  padding: 15px;
+  color: #ffffff;
+  border-radius: 5px;
+}
+
+/* Hovering effetc for button */
+.remove-fav:hover {
+  background-color: #c75c71;
+  cursor: pointer;
+}
+
+/* Nav bar */
+.nav {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 15px 15px 0 0;
+}
+
+/* Link of nav bar */
+.nav a {
+  text-decoration: none;
+  color: #b6bdc4;
+  font-weight: bold;
+  font-size: 1.2rem;
+}
